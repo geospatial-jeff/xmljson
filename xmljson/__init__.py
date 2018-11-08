@@ -143,7 +143,7 @@ class XMLData(object):
                     value[self.text_content] = self._fromstring(text)
         count = Counter(child.tag for child in children)
         for child in children:
-            if count[child.tag] == 1:
+            if count[child.tag] == 1 and child.tag != "VRTRasterBand":
                 value.update(self.data(child))
             else:
                 result = value.setdefault(child.tag, self.list())
