@@ -15,7 +15,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 setup(
-    name='xmljson',
+    name='xmljson_fork',
     version=xmljson.__version__,
     description='Converts XML into JSON/Python dicts/arrays and vice-versa.',
     long_description=readme + '\n\n' + history,
