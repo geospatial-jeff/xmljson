@@ -6,7 +6,7 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-import xmljson
+import xmljsonfork
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -16,7 +16,7 @@ with open('HISTORY.rst') as history_file:
 
 setup(
     name='xmljson_fork',
-    version=xmljson.__version__,
+    version=xmljsonfork.__version__,
     description='Converts XML into JSON/Python dicts/arrays and vice-versa.',
     long_description=readme + '\n\n' + history,
     author='S Anand',
@@ -25,8 +25,8 @@ setup(
     packages=[
         'xmljson',
     ],
-    package_dir={'xmljson':
-                 'xmljson'},
+    package_dir={'xmljsonfork':
+                 'xmljsonfork'},
     include_package_data=True,
     install_requires=[],
     license='MIT',
