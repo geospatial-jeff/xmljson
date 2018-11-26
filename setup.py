@@ -23,7 +23,7 @@ setup(
     author_email='root.node@gmail.com',
     url='https://github.com/sanand0/xmljson',
     packages=[
-        'xmljson',
+        'xmljsonfork',
     ],
     package_dir={'xmljsonfork':
                  'xmljsonfork'},
